@@ -1,0 +1,99 @@
+/* General CSS */
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+/* layout */
+.container { 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Header*/
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#header .logo {
+    flex-basis: 110px;
+    padding: 15px 0;
+}
+
+.main-navigation {
+    flex-basis: 100%;
+}
+
+.main-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+}
+
+.main-navigation .menu{
+    display: flex;
+    justify-content: right;
+}
+
+.main-navigation li {
+    line-height: 60px;
+    position: relative;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-navigation .menu > li > a {
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    color: #777;
+}
+
+.main-navigation svg {
+    width: 12px;
+    fill: #000;
+}
+
+.main-navigation .submenu-toggle {
+    margin-left: 5px;
+    top: 3px;
+    position: relative;
+}
+/* Sub Menu */
+.main-navigation .sub-menu {
+    position: absolute;
+    background-color: #fff;
+    min-width: 220px;
+    z-index: 9;
+    box-shadow: 0 13px 14px rgb(0 0 0 / 20%);
+    top: 100%;
+    left: 0;
+    padding: 15px 0;
+    display: none;  
+}
+
+.main-navigation li:hover .sub-menu {
+    display: block;
+}
+
+.main-navigation .sub-menu li {
+    line-height: 0;
+}
+
+.main-navigation .sub-menu a {
+    padding: 20px;
+    display: block;
+}
